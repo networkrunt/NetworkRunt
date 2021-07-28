@@ -4,7 +4,7 @@ widget_id: tags
 weight: 120
 title: Popular Topics
 subtitle: ""
-active: true
+active: false
 content:
   taxonomy: tags
   count: 20
