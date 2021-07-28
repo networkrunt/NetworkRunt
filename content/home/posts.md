@@ -1,7 +1,7 @@
 ---
 widget: pages
 headless: true
-weight: 60
+weight: 10
 title: Latest Posts
 subtitle: null
 content:
