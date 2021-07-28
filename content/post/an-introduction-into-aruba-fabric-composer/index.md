@@ -3,7 +3,7 @@ title: An Introduction into Aruba Fabric Composer
 subtitle: ""
 date: 2021-07-28T13:52:59.793Z
 summary: ""
-draft: true
+draft: false
 featured: false
 authors: []
 tags:
