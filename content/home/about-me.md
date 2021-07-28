@@ -4,7 +4,7 @@ widget_id: about-me
 headless: true
 weight: 90
 title: About Me
-active: false
+active: true
 design:
   columns: "2"
   background:
