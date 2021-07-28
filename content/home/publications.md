@@ -4,7 +4,7 @@ widget_id: Recent-Publications
 weight: 90
 title: Recent Publications
 subtitle: ""
-active: true
+active: false
 content:
   page_type: publication
   count: 5
