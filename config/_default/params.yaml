@@ -20,12 +20,11 @@ twitter: ''
 
 # Contact (edit or remove options as required)
 
-email: test@example.org
 contact_links:
   - icon: twitter
     icon_pack: fab
     name: Twitter
-    link: 'https://twitter.com/Twitter'
+    link: 'https://twitter.com/networkrunt'
   - icon: linkedin
     icon_pack: fab
     name: Linkedin
