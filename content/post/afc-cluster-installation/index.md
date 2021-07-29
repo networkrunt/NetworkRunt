@@ -1,6 +1,8 @@
 ---
 title: AFC Cluster Installation
 date: 2021-07-29T12:46:45.794Z
+summary: In this blog post, I will review the installation steps required to
+  install a three-node cluster using AFC 6.1.
 draft: false
 featured: false
 authors:
@@ -58,13 +60,13 @@ Create a VM with 4 CPU / 16GB RAM / 100GB HDD and configure the VM as a red hat 
 
 Start the VM. Select HA installation and choose Static IP address. Hit enter to continue.
 
-![](screenshot-2021-07-06-at-17.35.41.png)
+![](screenshot-2021-07-06-at-17.35.41.png "HA Install")
 
-![](screenshot-2021-07-06-at-17.38.41.png)
+![](screenshot-2021-07-06-at-17.38.41.png "Static IP Deployment")
 
 The install will then begin unpacking the necessary files. Accept the license agreement and configure the necessary settings (IP, name, DNS, NTP, etc). Once finished, select OK to start the install. The install took about 30 minutes.
 
-![](screenshot-2021-07-06-at-17.49.34.png)
+![](screenshot-2021-07-06-at-17.49.34.png "Define Parameters")
 
 Once the first node has been installed I then proceed to install nodes 1 and 2. To do so, I will perform the same installation steps as above for nodes 1 and 2.
 
@@ -79,20 +81,20 @@ sudo su
 
 Once initiated, the setup script will ask you for the IP address of node 1 and node 2 as well as the cluster VIP. Enter the necessary details and begin the setup.
 
-![](screenshot-2021-07-06-at-21.16.12.png "Defining HA parameters")
+![](screenshot-2021-07-06-at-21.16.12.png "Defining HA Parameters")
 
 Complete the process without any interruption. Once finalised, each of the nodes will require a reboot. This will take place as part of the process to conclude the installation.
 
-![](screenshot-2021-07-06-at-21.27.28.png)
+![](screenshot-2021-07-06-at-21.27.28.png "Install Complete")
 
 Post reload, you can open an HTTPS session to the cluster VIP to access the AFC web interface. The default username and password is admin/aruba. You will be presented with the following interface.
 
-![](screenshot-2021-07-06-at-21.47.27.png "AFC login page")
+![](screenshot-2021-07-06-at-21.47.27.png "AFC Login Page")
 
 \
 You will then be asked to change the default password. Provide a strong password and hit apply. Note, this changes the password for the GUI login only.
 
-![](screenshot-2021-07-06-at-21.48.02.png "Update AFC credentials")
+![](screenshot-2021-07-06-at-21.48.02.png "Update AFC Credentials")
 
 You will now have access to the cluster.
 
@@ -102,26 +104,26 @@ As with any deployment, it is always useful to verify it has been successful. Yo
 
 Login to the AFC GUI. Go to Configuration > Maintenance > High Availability. Here you will be presented with the health status of each of the nodes and the current cluster state.
 
-![](screenshot-2021-07-06-at-21.55.09.png)
+![](screenshot-2021-07-06-at-21.55.09.png "Accessing HA")
 
-![](screenshot-2021-07-06-at-21.58.03.png "Cluster health")
+![](screenshot-2021-07-06-at-21.58.03.png "Cluster Health")
 
 Log in to the CLI of a node and run the following commands. SSH tunnels are used between cluster nodes for internal communications. Verify the status using the following command. Note, the output will show several services for all three nodes. An operational and healthy service will have a value of true. If the value is false then the service is not running.
 
-![](screenshot-2021-07-06-at-22.04.51.png)
+![](screenshot-2021-07-06-at-22.04.51.png "Node Cluster Services")
 
 Check the health of each node.
 
-![](screenshot-2021-07-06-at-22.06.18.png)
+![](screenshot-2021-07-06-at-22.06.18.png "Node Health Status")
 
 Confirm all nodes are present and available in the cluster. You can see from the output that node 0 is the leader.
 
-![](screenshot-2021-07-06-at-22.07.07.png)
+![](screenshot-2021-07-06-at-22.07.07.png "Node Leader Status")
 
 \
 Verify the DB is running on each node.
 
-![](screenshot-2021-07-06-at-22.08.16.png)
+![](screenshot-2021-07-06-at-22.08.16.png "DB Status")
 
 ## Changing the Linux admin password
 
@@ -129,11 +131,11 @@ By default, each VM is assigned the default credentials of admin/aruba. Let's lo
 
 SSH to each of the cluster nodes. Run the passwd command and provide new credentials.
 
-![](screenshot-2021-07-06-at-22.11.18.png "Updating Linux password")
+![](screenshot-2021-07-06-at-22.11.18.png "Updating Linux Password")
 
 ## Summary
 
-During this post, I have covered;
+During this post, I have covered the following;
 
 * The hardware and software requirements for AFC.
 * AFC 6.1 cluster installation using the ISO method on ESXi.
