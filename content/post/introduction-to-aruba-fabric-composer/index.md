@@ -24,7 +24,7 @@ Data Centre architects and engineers know how complex design and implementation 
 
 Many organisations continue to implement network changes using the CLI. This can become a laborious, time-consuming task that prolongs project and BAU timelines. The amount of effort can roll into the weeks or months per change. Anything we can do to help mitigate or reduce some of these issues is welcome. Customers are starting to look towards automation and orchestration tools for help.
 
-## Whats is AFC?
+## What is AFC?
 
 Aruba Fabric Composer is a data centre orchestration tool that simplifies the deployment of network changes and day-to-day operations. Preconfigured workflows automate complex tasks with minimal input.
 
@@ -36,7 +36,7 @@ They always say a picture says a thousand words so here is a nice solution diagr
 
 The cluster is deployed using three nodes for high availability. In the event of a node down situation, the remaining nodes can continue to function. This helps maintain the services of the cluster whilst the node is restored.
 
-The cluster is the management plane and provides access to the orchestration GUI. From the interface, they can perform network changes and monitor the environment.
+The cluster is the management plane and provides access to the orchestration GUI. From the interface, you can perform network changes and monitor the environment.
 
 Changes between AFC and the managed fabric(s) are API-driven. The config is pushed to the managed switches without an engineer logging into the device.
 
