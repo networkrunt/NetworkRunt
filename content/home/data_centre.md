@@ -1,9 +1,10 @@
 ---
 widget: pages
-headless: true
+widget_id: data_centre
 weight: 20
 title: Data Centre
 subtitle: null
+active: true
 content:
   page_type: post
   count: 5
@@ -17,7 +18,7 @@ content:
     publication_type: ""
   offset: 0
   order: desc
-widget_id: data_centre
+headless: true
 design:
   view: 2
 ---
