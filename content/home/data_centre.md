@@ -4,7 +4,7 @@ widget_id: data_centre
 weight: 20
 title: Data Centre
 subtitle: null
-active: true
+active: false
 content:
   page_type: post
   count: 5
