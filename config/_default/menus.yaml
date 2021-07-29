@@ -7,9 +7,9 @@ main:
   - name: Latest Posts
     url: '#posts'
     weight: 10
-  - name: Data Centre
-    url: '#data_centre'
-    weight: 20
+#  - name: Data Centre
+#    url: '#data_centre'
+#    weight: 20
   - name: About
     url: '#about'
     weight: 30
