@@ -61,7 +61,7 @@ email: ""
 highlight_name: false
 ---
 
-Hello, my name is Andrew and I work at Aruba Networks as a Presales Systems Engineer. I have created this blog site to record some of my own learnings. The posts are my own thoughts and in no way reflect those of my employer or colleagues. Hopefully they will prove useful to other people using the technology or are in the process of learning the same topics.
+Hello, my name is Andrew and I work at Aruba Networks as a Presales Systems Engineer. I have created this blog site to record some of my own learnings. The posts are my own thoughts and in no way reflect those of my employer or colleagues. Hopefully these posts will prove useful to other people using the technology.
 
 Feel free to contact me if you have any constructive feedback on the content.
 
