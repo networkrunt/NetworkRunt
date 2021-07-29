@@ -1,5 +1,5 @@
 ---
-title: AFC Cluster installation
+title: AFC Cluster Installation
 date: 2021-07-29T12:46:45.794Z
 draft: false
 featured: false
@@ -20,7 +20,7 @@ image:
 
 AFC can be installed as a single node or using multiple nodes. In this blog post, I will go through the process to install a three-node cluster using AFC 6.1. The cluster will be installed in my home lab environment using ESXi 6.5.
 
-I like how AFC can be deployed as a VM. It means you can deploy it up without needing any expensive hardware. You can spin it up as a VM and away you go. Easy-peasy.
+I like how AFC can be deployed as a VM. It means you can deploy it without needing any expensive hardware. You can spin it up as a VM and away you go. Easy-peasy.
 
 For lab purposes, it's fine to deploy a single node. This is what I do in my lab environment.
 
@@ -48,7 +48,7 @@ Note; It's always worth reading the latest release notes and installation guide 
 
 ## Installation
 
-The cluster nodes can be installed via two methods. The first method is by deploying an OVA in vSphere. Alternatively, you can boot from an ISO image. As part of this task, I will be using the ISO image. I will be using the naming convention AFC-CN-XX which stands for AFC-ClusterNode-XX. The internal node numbering is 00, 01 and 02 so i will also use the same numbering convention.
+The cluster nodes can be installed via two methods. The first method is by deploying an OVA in vSphere. Alternatively, you can boot from an ISO image. As part of this task, I will be using the ISO image. I will be using the naming convention AFC-CN-XX which stands for AFC-ClusterNode-XX. The internal node numbering is 00, 01 and 02 so I will also use the same numbering convention.
 
 Create a VM with 4 CPU / 16GB RAM / 100GB HDD and configure the VM as a red hat 7 64 bit image. Specify management network and mount ISO image. 
 
@@ -85,7 +85,7 @@ Complete the process without any interruption. Once finalised, each of the nodes
 
 ![](screenshot-2021-07-06-at-21.27.28.png)
 
-Post reload, you can open an https session to the cluster VIP to access the AFC web interface. The default username and password is admin/aruba. You will be presented with the following interface.
+Post reload, you can open an HTTPS session to the cluster VIP to access the AFC web interface. The default username and password is admin/aruba. You will be presented with the following interface.
 
 ![](screenshot-2021-07-06-at-21.47.27.png "AFC login page")
 
@@ -106,7 +106,7 @@ Login to the AFC GUI. Go to Configuration > Maintenance > High Availability. Her
 
 ![](screenshot-2021-07-06-at-21.58.03.png "Cluster health")
 
-Login to the CLI of a node and run the following commands. SSH tunnels are used between cluster nodes for internal communications. Verify the status using the following command. Note, the output will show several services for all three nodes. An operational and healthy service will have a value of true. If the value is false then the service is not running.
+Log in to the CLI of a node and run the following commands. SSH tunnels are used between cluster nodes for internal communications. Verify the status using the following command. Note, the output will show several services for all three nodes. An operational and healthy service will have a value of true. If the value is false then the service is not running.
 
 ![](screenshot-2021-07-06-at-22.04.51.png)
 
@@ -125,7 +125,7 @@ Verify the DB is running on each node.
 
 ## Changing the Linux admin password
 
-By default, each VM is assigned the default credentials of admin/aruba. Lets login to each of the nodes via ssh and change it for security purposes.
+By default, each VM is assigned the default credentials of admin/aruba. Let's login to each of the nodes via ssh and change it for security purposes.
 
 SSH to each of the cluster nodes. Run the passwd command and provide new credentials.
 
