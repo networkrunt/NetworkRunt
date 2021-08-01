@@ -19,7 +19,7 @@ image:
   focal_point: Smart
   preview_only: false
 ---
-OK, let's get started. First things first, the fabric composer is fresh out of the box and does not contain any devices to date. We will need to start populating the fabric composer. To get started, we must go ahead and add any devices into AFC. To perform this task, I will be using the guided setup.
+OK, let's get started. First things first, the fabric composer is fresh out of the box and does not contain any devices to date. We will need to start populating the fabric composer. To get started, we must go ahead and add the devices into AFC. To perform this task, I will be using the guided setup.
 
 For reference, I will be using a Spine-Leaf topology;
 
@@ -27,7 +27,7 @@ For reference, I will be using a Spine-Leaf topology;
 
 ## Switch Discovery
 
-in onboarding devices through the AFC console, we need to make sure each switch is configured with a IP address, local admin account, SSH and Rest API access.
+To onboard devices, we need to make sure each switch is configured with a IP address, local admin account, SSH and Rest API access.
 
 Moving across to the wizard, I will proceed with the "Switches" setup to begin the device discovery process.
 
@@ -41,7 +41,7 @@ In my lab, I have assigned each device a static IP address. You can either assig
 
 The fabric composer will use the IP address information to connect to each device. AFC performs a login using the local admin account. The fabric composer will create a new AFC_admin account and use it moving forward. The device is then onboarded into the system.
 
-Once the onboarding is complete, I am returned to the main page. I can see the switches now in the inventory and they are in a healthy state. The status of each device is currently "Unassigned" meaning the device(s) have not yet been assigned to a fabric.
+Once the onboarding is complete, I am returned to the main page. I can see the switches in the inventory and they are in a healthy state. The status of each device is currently "Unassigned" meaning the device(s) have not yet been assigned to a fabric.
 
 ![](screenshot-2021-07-08-at-11.30.01.png "Switch Inventory")
 
@@ -53,7 +53,7 @@ Using the wizard I will add a fabric.
 
 ![](screenshot-2021-07-08-at-11.30.29.png "Fabric Creation")
 
-I now provide information about the fabric. Most of it is self-explanatory as you can see below. One thing to note is the fabric "type". AFC supports two types of fabric. The first type is a data fabric that supports switches participating in the data path. The second option is for OOB management switches using the CX6300.
+I now provide information about the fabric. Most of it is self-explanatory as you can see below. One thing to note is the fabric "type". AFC supports two types of fabric. The first type is a data fabric that supports switches participating in the data path. The second type is for OOB management switches using the CX6300.
 
 I will now proceed with a data fabric and hit apply.
 
@@ -63,7 +63,7 @@ The fabric is now visible in the GUI.
 
 ![](screenshot-2021-07-08-at-11.31.50.png "Fabric Status")
 
-Now let's assign the discovered switches to the fabric. Go across to the wizard and select the "Assign switch to fabric" option.
+Let's assign the discovered switches to the fabric. Go across to the wizard and select the "Assign switch to fabric" option.
 
 ![](screenshot-2021-07-08-at-11.32.09.png "Assign switch to fabric")
 
@@ -79,7 +79,7 @@ The same process will now be applied to the leaf switches.
 
 ![](screenshot-at-jul-08-11-33-58.png "Adding Leaf Switches to Fabric")
 
-AFC and the devices will be synchronised. The health status will change to a green "healthy" state and each device will be assigned to your designated fabric. In this example, the fabric is DC1_F1.
+AFC and the devices will be synchronised. The health status will change to a green "healthy" state and each device will be assigned to your designated fabric.
 
 ![](screenshot-at-jul-08-11-39-52.png "Device & Fabric Status")
 
