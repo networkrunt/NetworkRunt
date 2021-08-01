@@ -50,7 +50,7 @@ Note; It's always worth reading the latest release notes and installation guide 
 
 ## Installation
 
-The cluster nodes can be installed via two methods. The first method is by deploying an OVA in vSphere. Alternatively, you can boot from an ISO image. As part of this task, I will be using the ISO image. I will be using the naming convention AFC-CN-XX which stands for AFC-ClusterNode-XX. The internal node numbering is 00, 01 and 02 so I will also use the same numbering convention.
+The cluster nodes can be installed via two methods. The first method is by deploying an OVA in vSphere. Alternatively, you can boot from an ISO image. As part of this task, I will be using the ISO image. I will be using the naming convention AFC-CN-XX which stands for AFC-ClusterNode-XX. The internal node numbering is 00, 01 and 02 so I will also use the same numbering convention. Let's get started with the install.
 
 Create a VM with 4 CPU / 16GB RAM / 100GB HDD and configure the VM as a red hat 7 64 bit image. Specify management network and mount ISO image. 
 
@@ -58,17 +58,19 @@ Create a VM with 4 CPU / 16GB RAM / 100GB HDD and configure the VM as a red hat 
 
 ![](screenshot-2021-07-06-at-17.34.33.png "VM Settings")
 
-Start the VM. Select HA installation and choose Static IP address. Hit enter to continue.
+Start the VM and proceed with the HA installation. 
 
 ![](screenshot-2021-07-06-at-17.35.41.png "HA Install")
 
+Choose Static IP address. Hit enter to continue.
+
 ![](screenshot-2021-07-06-at-17.38.41.png "Static IP Deployment")
 
-The install will then begin unpacking the necessary files. Accept the license agreement and configure the necessary settings (IP, name, DNS, NTP, etc). Once finished, select OK to start the install. The install took about 30 minutes.
+The install will then begin unpacking the necessary files. Accept the license agreement and configure the necessary settings (IP, name, DNS, NTP, etc). Once finished, select OK to start the install. The install took around 30 minutes on my server.
 
 ![](screenshot-2021-07-06-at-17.49.34.png "Define Parameters")
 
-Once the first node has been installed I then proceed to install nodes 1 and 2. To do so, I will perform the same installation steps as above for nodes 1 and 2.
+Once the first node has been installed I then proceed to install nodes 1 and 2. To do so, I will perform the same installation steps as above for nodes 1 and 2. 
 
 I now have all three nodes stood up once nodes 1 and 2 have completed their initial installation. The last step is to configure HA between the three nodes. I will now login to the CLI of node 0. By default, the username is admin and password aruba. Run the following command to start the HA deployment.
 
@@ -83,7 +85,7 @@ Once initiated, the setup script will ask you for the IP address of node 1 and n
 
 ![](screenshot-2021-07-06-at-21.16.12.png "Defining HA Parameters")
 
-Complete the process without any interruption. Once finalised, each of the nodes will require a reboot. This will take place as part of the process to conclude the installation.
+Allow the process to complete without any interruption. Once finalised, each of the nodes will require a reboot. This will take place as part of the process to conclude the installation.
 
 ![](screenshot-2021-07-06-at-21.27.28.png "Install Complete")
 
@@ -100,7 +102,7 @@ You will now have access to the cluster.
 
 ## Cluster verification
 
-As with any deployment, it is always useful to verify it has been successful. You can use the following steps to do so.
+As with any deployment, it is always useful to verify it has been successful. You can use the following steps to verify the cluster state.
 
 Login to the AFC GUI. Go to Configuration > Maintenance > High Availability. Here you will be presented with the health status of each of the nodes and the current cluster state.
 
@@ -108,15 +110,15 @@ Login to the AFC GUI. Go to Configuration > Maintenance > High Availability. Her
 
 ![](screenshot-2021-07-06-at-21.58.03.png "Cluster Health")
 
-Log in to the CLI of a node and run the following commands. SSH tunnels are used between cluster nodes for internal communications. Verify the status using the following command. Note, the output will show several services for all three nodes. An operational and healthy service will have a value of true. If the value is false then the service is not running.
+Log in to the CLI of a node and run the following commands. SSH tunnels are used between cluster nodes for internal communications. Verify the status of the cluster services using the following command. Note, the output will show several services for all three nodes. An operational and healthy service will have a value of true. If the value is false then the service is not running. Check to ensure the services are running correctly.
 
 ![](screenshot-2021-07-06-at-22.04.51.png "Node Cluster Services")
 
-Check the health of each node.
+Next, we can check the health of each node.
 
 ![](screenshot-2021-07-06-at-22.06.18.png "Node Health Status")
 
-Confirm all nodes are present and available in the cluster. You can see from the output that node 0 is the leader.
+Confirm all nodes are present and available in the cluster. You can see from the output that node 0 is the leader in this example.
 
 ![](screenshot-2021-07-06-at-22.07.07.png "Node Leader Status")
 
@@ -140,6 +142,6 @@ During this post, I have covered the following;
 * The hardware and software requirements for AFC.
 * AFC 6.1 cluster installation using the ISO method on ESXi.
 * Configuring the cluster HA.
-* Cluster verification.
+* Verifying the cluster status post installation.
 
 Hopefully, this has provided some useful insights regarding how you would install a cluster from scratch. Next up, we will have an overview of the AFC GUI layout.
