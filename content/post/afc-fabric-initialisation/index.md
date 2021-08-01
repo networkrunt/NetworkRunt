@@ -3,7 +3,7 @@ title: AFC Fabric Initialisation
 date: 2021-08-01T12:53:47.482Z
 summary: In this blog post, I will review the steps required to onboard devices
   into the AFC inventory and the managed network fabric.
-draft: false
+draft: true
 featured: false
 authors:
   - admin
@@ -90,4 +90,4 @@ If I go back to the main dashboard, there is a total of 6 switches.
 * Reviewed the switch prerequisites for AFC onboarding.
 * I added the switches into the AFC inventory.
 * I demonstrated how to add switches into the fabric.
-* Reviewed the switch and fabric status.
+* Verified the switch and fabric status.
