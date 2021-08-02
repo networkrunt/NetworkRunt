@@ -17,6 +17,14 @@ image:
   focal_point: Smart
   preview_only: false
 ---
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NWHJDNP');</script>
+<!-- End Google Tag Manager -->
+
 The blog series intends to provide an introduction to the Aruba Fabric Composer (AFC). The series will cover a range of topics in AFC. Think of the posts as more of a how-to guide without deep-diving into the underlying protocols. The articles are for my own learning purposes. I hope they will prove useful to others.
 
 Data Centre architects and engineers know how complex design and implementation can be. Regardless of the deployment size, the amount of effort can be large. And this may be for only a single site! Multiply the number of sites by many and you start to wonder what is the best way to manage it.
