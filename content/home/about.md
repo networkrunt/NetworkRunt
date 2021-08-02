@@ -8,5 +8,5 @@ author: admin
 widget_id: about-me
 design:
   background:
-    image: linkedin-profile-pic.jpg
+    image: ""
 ---
