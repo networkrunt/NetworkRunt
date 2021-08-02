@@ -19,9 +19,17 @@ image:
   focal_point: Smart
   preview_only: false
 ---
-OK, let's get started. First things first, the fabric composer is fresh out of the box and does not contain any devices to date. We will need to start populating the fabric composer. To get started, we must go ahead and add the devices into AFC. To perform this task, I will be using the guided setup.
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NWHJDNP');</script>
+<!-- End Google Tag Manager -->
 
-For reference, I will be using a Spine-Leaf topology;
+First things first, the fabric composer is fresh out of the box and does not contain any devices to date. We will need to start populating the fabric composer. To get started, we must go ahead and add the devices into AFC. To perform this task, I will be using the guided setup.
+
+For reference, I will be using a Spine-Leaf topology as below;
 
 ![](spine-leaf-base-diagram.jpg "Lab Topology")
 
@@ -67,7 +75,7 @@ Let's assign the discovered switches to the fabric. Go across to the wizard and 
 
 ![](screenshot-2021-07-08-at-11.32.09.png "Assign switch to fabric")
 
-First, I will add both Spine-01 and Spine-02 and define their role within the fabric as a Spine switch. I will also choose to initialise the ports and allow LLDP discovery. Once selected, you need to click the "Add" button before applying the configuration.
+I will add both Spine-01 and Spine-02 and define their role within the fabric as a Spine switch. I will also choose to initialise the ports and allow LLDP discovery. Once selected, you need to click the "Add" button before applying the configuration.
 
 ![](screenshot-2021-07-08-at-11.37.40.png "Adding Spine Switches to Fabric")
 
@@ -79,11 +87,11 @@ The same process will now be applied to the leaf switches.
 
 ![](screenshot-at-jul-08-11-33-58.png "Adding Leaf Switches to Fabric")
 
-AFC and the devices will be synchronised. The health status will change to a green "healthy" state and each device will be assigned to your designated fabric.
+AFC and the devices will synchronise with one another. The health status will change to a green "healthy" state and each device will be assigned to your designated fabric.
 
 ![](screenshot-at-jul-08-11-39-52.png "Device & Fabric Status")
 
-If I go back to the main dashboard, there is a total of 6 switches.
+If I go back to the main dashboard, there is now a total of 6 switches.
 
 ## Summary
 
