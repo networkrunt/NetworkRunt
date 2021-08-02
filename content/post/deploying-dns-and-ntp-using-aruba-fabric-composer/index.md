@@ -6,12 +6,24 @@ summary: In this article, i will demonstrate how to deploy DNS and NTP services
   to a managed fabric.
 draft: true
 featured: false
+tags:
+  - afc
+  - aruba_fabric_composer
+  - data_centre
+categories:
+  - data_centre
 image:
   filename: featured
   focal_point: Smart
   preview_only: false
 ---
- 
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NWHJDNP');</script>
+<!-- End Google Tag Manager -->
 
 It is best practice to configure DNS and NTP as part of your DC deployment. Deploying these services is definitely not a hot topic but an important one. This section will review deploying both services to the fabric. 
 
