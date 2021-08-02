@@ -2,6 +2,7 @@
 title: Introduction to Aruba Fabric Composer
 subtitle: ""
 date: 2021-07-29
+summary: A very high level overview of Aruba Fabric Composer.
 draft: false
 featured: false
 authors:
