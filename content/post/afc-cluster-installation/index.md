@@ -137,7 +137,7 @@ Verify the DB is running on each node.
 
 ## Changing the Linux admin password
 
-By default, each VM is assigned the default credentials of admin/aruba. Let's login to each of the nodes via ssh and change it for security purposes.
+By default, each VM is assigned the default credentials of admin/aruba. Let's log in to each of the nodes via ssh and change it for security purposes.
 
 SSH to each of the cluster nodes. Run the passwd command and provide new credentials.
 
@@ -150,6 +150,8 @@ During this post, I have covered the following;
 * The hardware and software requirements for AFC.
 * AFC 6.1 cluster installation using the ISO method on ESXi.
 * Configuring the cluster HA.
-* Verifying the cluster status post installation.
+* Verifying the cluster status post-installation.
 
 Hopefully, this has provided some useful insights regarding how you would install a cluster from scratch. Next up, we will have an overview of the AFC GUI layout.
+
+[Next Article: AFC GUI Overview](/post/afc-gui-overview/)
