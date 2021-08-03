@@ -54,4 +54,4 @@ AFC supports third-party integration. The integrations provide visibility into w
 
 In the next article, I will take a look at the cluster installation.
 
-[Next Article: AFC Cluster Installation](https://www.networkrunt.com/post/afc-cluster-installation/)
+[Next Article: AFC Cluster Installation](/post/afc-cluster-installation/)
