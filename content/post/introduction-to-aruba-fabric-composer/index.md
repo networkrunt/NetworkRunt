@@ -19,11 +19,13 @@ image:
   preview_only: false
 ---
 <!-- Google Tag Manager -->
+
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-NWHJDNP');</script>
+
 <!-- End Google Tag Manager -->
 
 The blog series intends to provide an introduction to the Aruba Fabric Composer (AFC). The series will cover a range of topics in AFC. Think of the posts as more of a how-to guide without deep-diving into the underlying protocols. The articles are for my own learning purposes. I hope they will prove useful to others.
@@ -51,3 +53,5 @@ Changes between AFC, third-party integrations, and the managed fabric(s) are API
 AFC supports third-party integration. The integrations provide visibility into workloads and assists with troubleshooting complex topologies. Event-driven workflow automation is also supported. The integration packs provide integration with solutions from vendors such as Aruba, HPE, VMware, Nutanix and StackStorm.
 
 In the next article, I will take a look at the cluster installation.
+
+[Next Article: AFC Cluster Installation](https://www.networkrunt.com/post/afc-cluster-installation/)
