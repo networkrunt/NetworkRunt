@@ -40,8 +40,6 @@ Enter your NTP server address details.
 
 ![](screenshot-2021-07-08-at-11.54.05.png "Enter NTP Details")
 
-
-
 Scroll down and select "Add" to add the server configuration. Hit next to proceed to the next screen.
 
 ![](screenshot-at-jul-08-11-54-35.png "Add NTP Details")
@@ -98,8 +96,6 @@ You can also perform the relevant show commands on the CLI to perform further va
 
 In this article, i reviewed the following items;
 
-* Deploying DNS and NTP using the wizar
-*
-*
-*
-*
+* Deploying DNS and NTP using the wizard.
+* Reviewing the configuration from the CLI perspective.
+* Verifying each service.
