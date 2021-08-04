@@ -50,3 +50,5 @@ As a side note, you can hide the guided setup at any time by selecting the butto
 As we progress through the series, we will begin to see more of the AFC interface and its components.
 
 Now let's begin onboarding some devices onto the cluster.
+
+[Next Article: AFC Fabric Initialisation](/post/afc-fabric-initialisation/)
