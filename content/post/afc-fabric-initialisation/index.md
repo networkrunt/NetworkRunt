@@ -3,7 +3,7 @@ title: AFC Fabric Initialisation
 date: 2021-08-01T12:53:47.482Z
 summary: In this blog post, I will review the steps required to onboard devices
   into the AFC inventory and the managed network fabric.
-draft: true
+draft: false
 featured: false
 authors:
   - admin
@@ -27,7 +27,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-NWHJDNP');</script>
 <!-- End Google Tag Manager -->
 
-First things first, the fabric composer is fresh out of the box and does not contain any devices to date. We will need to start populating the fabric composer. To get started, we must go ahead and add the devices into AFC. To perform this task, I will be using the guided setup.
+At this point, the fabric composer is fresh out of the box and does not contain any devices. I will need to start populating the fabric composer. To get started, we must go ahead and add the devices into AFC. To perform this task, I will be using the guided setup.
 
 For reference, I will be using a Spine-Leaf topology as below;
 
@@ -35,7 +35,7 @@ For reference, I will be using a Spine-Leaf topology as below;
 
 ## Switch Discovery
 
-To onboard devices, we need to make sure each switch is configured with a IP address, local admin account, SSH and Rest API access.
+To onboard devices, we need to make sure each switch is configured with an IP address, local admin account, SSH and Rest API access.
 
 Moving across to the wizard, I will proceed with the "Switches" setup to begin the device discovery process.
 
@@ -45,7 +45,7 @@ Once selected, the wizard will prompt for information about the devices. I have 
 
 ![](screenshot-2021-07-08-at-11.23.26.png "Switch Parameters")
 
-In my lab, I have assigned each device a static IP address. You can either assign static IP's or use DHCP depending on your preference. Regardless of which path you choose, you need to know the IP address of each device so you can add them to the fabric.
+In my lab, I have assigned each device a static IP address. You can either assign static IP addresses or use DHCP depending on your preference. Regardless of which path you choose, you need to know the IP address of each device so you can add them to the fabric.
 
 The fabric composer will use the IP address information to connect to each device. AFC performs a login using the local admin account. The fabric composer will create a new AFC_admin account and use it moving forward. The device is then onboarded into the system.
 
@@ -53,9 +53,9 @@ Once the onboarding is complete, I am returned to the main page. I can see the s
 
 ![](screenshot-2021-07-08-at-11.30.01.png "Switch Inventory")
 
-## Adding switches into a Fabric
+## Adding switches into a fabric
 
-I will now begin the Fabric creation. In this example, I will be creating a single fabric named DC1_F1. It will act as a logical container and provide management of my devices. In a real-world deployment, you may have multiple fabrics depending on your requirements.
+I will now begin the fabric creation. In this example, I will be creating a single fabric named DC1_F1. It will act as a logical container and provide management of my devices. In a real-world deployment, you may have multiple fabrics depending on your requirements.
 
 Using the wizard I will add a fabric.
 
@@ -75,7 +75,7 @@ Let's assign the discovered switches to the fabric. Go across to the wizard and 
 
 ![](screenshot-2021-07-08-at-11.32.09.png "Assign switch to fabric")
 
-I will add both Spine-01 and Spine-02 and define their role within the fabric as a Spine switch. I will also choose to initialise the ports and allow LLDP discovery. Once selected, you need to click the "Add" button before applying the configuration.
+I will add both Spine-01 and Spine-02 and define their role within the fabric as a spine switch. I will also choose to initialise the ports and allow LLDP discovery. Once selected, you need to click the "Add" button before applying the configuration.
 
 ![](screenshot-2021-07-08-at-11.37.40.png "Adding Spine Switches to Fabric")
 
