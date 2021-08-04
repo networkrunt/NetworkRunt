@@ -1,10 +1,10 @@
 ---
 title: Deploying DNS and NTP using Aruba Fabric Composer
 subtitle: ""
-date: 2021-08-04T06:11:26.387Z
+date: 2021-08-04T06:35:51.807Z
 summary: In this article, I will demonstrate how to deploy DNS and NTP services
   to a managed fabric using Aruba Fabric Composer.
-draft: true
+draft: false
 featured: false
 tags:
   - afc
