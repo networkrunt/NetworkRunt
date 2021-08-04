@@ -96,8 +96,8 @@ If I go back to the main dashboard, there is now a total of 6 switches.
 ## Summary
 
 * Reviewed the switch prerequisites for AFC onboarding.
-* I added the switches into the AFC inventory.
-* I demonstrated how to add switches into the fabric.
+* Added the switches into the AFC inventory.
+* Demonstrated how to add switches into the fabric.
 * Verified the switch and fabric status.
 
 In the next article, I will cover NTP and DNS deployment.
