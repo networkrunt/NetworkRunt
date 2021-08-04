@@ -99,3 +99,7 @@ If I go back to the main dashboard, there is now a total of 6 switches.
 * I added the switches into the AFC inventory.
 * I demonstrated how to add switches into the fabric.
 * Verified the switch and fabric status.
+
+In the next article, I will cover NTP and DNS deployment.
+
+[Next Article: Deploying DNS and NTP using Aruba Fabric Composer](/post/deploying-dns-and-ntp-using-aruba-fabric-composer)
