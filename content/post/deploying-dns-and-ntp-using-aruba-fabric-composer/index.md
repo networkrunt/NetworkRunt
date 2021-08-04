@@ -1,7 +1,7 @@
 ---
 title: Deploying DNS and NTP using Aruba Fabric Composer
 subtitle: ""
-date: 2021-08-02T13:30:05.249Z
+date: 2021-08-04T06:11:26.387Z
 summary: In this article, I will demonstrate how to deploy DNS and NTP services
   to a managed fabric using Aruba Fabric Composer.
 draft: true
@@ -28,7 +28,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <!-- End Google Tag Manager -->
 
-It is a common task to configure network services in a DCN environment. Deploying NTP and DNS services is definitely not a hot topic but a useful one. This section will review deploying both services to the managed network using Fabric Composer. 
+Deploying NTP and DNS services is definitely not a hot topic but it is a useful one. This section will review deploying both services to the managed network using Fabric Composer. 
 
 ## Deploying NTP
 
@@ -40,7 +40,7 @@ Enter your NTP server address details.
 
 ![](screenshot-2021-07-08-at-11.54.05.png "Enter NTP Details")
 
-Scroll down and select "Add" to add the server configuration. Hit next to proceed to the next screen.
+Scroll down and select "Add" to add the server configuration. Hit next to proceed.
 
 ![](screenshot-at-jul-08-11-54-35.png "Add NTP Details")
 
@@ -84,9 +84,9 @@ Before moving onto the next section I would just like to show what's going on un
 
 ![](screenshot-2021-07-08-at-12.21.55.png "CLI Configuration")
 
-This is one thing I like about AFC -  the fact I can still go into the CLI and perform changes. I am not locked out or restricted from the CLI in an AFC deployment. I have full CLI access so I can go ahead and run all of the commands I am familiar with. 
+This is one of the things I like about AFC -  the fact I can still go into the CLI and perform changes. I am not locked out or restricted from the CLI in an AFC deployment. I have full CLI access so I can go ahead and run all of the commands I am familiar with. 
 
-You can also perform the relevant show commands on the CLI to perform further validation as per the example below.
+You can also perform the relevant show commands on the CLI to run further validation as per the example below.
 
 ![](screenshot-2021-07-08-at-21.58.42.png "NTP Verification")
 
@@ -94,8 +94,6 @@ You can also perform the relevant show commands on the CLI to perform further va
 
 ## Summary
 
-In this article, i reviewed the following items;
-
-* Deploying DNS and NTP using the wizard.
-* Reviewing the configuration from the CLI perspective.
-* Verifying each service.
+* Deployed DNS and NTP using the wizard.
+* Reviewed the configuration from the CLI perspective.
+* Verified each service is working correctly.
