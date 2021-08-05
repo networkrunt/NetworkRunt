@@ -20,11 +20,13 @@ image:
   preview_only: false
 ---
 <!-- Google Tag Manager -->
+
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-NWHJDNP');</script>
+
 <!-- End Google Tag Manager -->
 
 At this point, the fabric composer is fresh out of the box and does not contain any devices. I will need to start populating the fabric composer. To get started, we must go ahead and add the devices into AFC. To perform this task, I will be using the guided setup.
@@ -94,6 +96,8 @@ AFC and the devices will synchronise with one another. The health status will ch
 If I go back to the main dashboard, there is now a total of 6 switches.
 
 ## Summary
+
+During this post, I have covered the following;
 
 * Reviewed the switch prerequisites for AFC onboarding.
 * Added the switches into the AFC inventory.
