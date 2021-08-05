@@ -99,3 +99,7 @@ During this post, I have covered the following;
 * Deployed DNS and NTP using the wizard.
 * Reviewed the configuration from the CLI perspective.
 * Verified each service is working correctly.
+
+In the next article, I will review the steps to deploy VSX.
+
+[Next Article: AFC GUI Overview](/post/afc-vsx-deployment/)
