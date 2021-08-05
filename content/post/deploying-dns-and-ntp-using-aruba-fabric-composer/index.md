@@ -94,6 +94,8 @@ You can also perform the relevant show commands on the CLI to run further valida
 
 ## Summary
 
+During this post, I have covered the following;
+
 * Deployed DNS and NTP using the wizard.
 * Reviewed the configuration from the CLI perspective.
 * Verified each service is working correctly.
