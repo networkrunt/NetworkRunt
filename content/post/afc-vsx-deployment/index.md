@@ -43,7 +43,7 @@ I provide a name and description for the VSX job.
 
 ![](screenshot-2021-07-08-at-22.03.05.png "VSX Job Info")
 
-I configure inter-switch link (ISL) settings such as the hello and hold timers for the VSX operations. By default, AFC will provide you with the recommended values. These are sufficient for most environments. I will proceed with the default settings.
+I now configure inter-switch link (ISL) settings such as the hello and hold timers for the VSX operations. By default, AFC will provide you with the recommended values. These are sufficient for most environments. I will proceed with the default settings.
 
 ![](screenshot-2021-07-08-at-22.03.16.png "ISL Parameters")
 
