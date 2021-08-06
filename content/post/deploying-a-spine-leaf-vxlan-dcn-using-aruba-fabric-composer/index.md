@@ -1,9 +1,9 @@
 ---
-title: Deploying a Spine Leaf VXLAN DCN using Aruba Fabric Composer
+title: Deploying a Spine Leaf VXLAN DCN using AFC
 date: 2021-08-05T13:15:47.432Z
 summary: In this blog post, I will show you how you can deploy a VXLAN network
   using AFC's integrated workflows.
-draft: true
+draft: false
 featured: false
 image:
   filename: featured
@@ -16,11 +16,11 @@ In this article I will use AFC to deploy a small spine leaf topology using VXLAN
 
 The network is comprised of two spine switches and four leaf switches. Each pair of leaf switches has been deployed using VSX as shown in the previous article. Now I will use AFC to deploy VXLAN. 
 
-Normally this would take a massive amount of effort. It can require a considerable amount of hours to generate the necessary config and perform the validation. Using AFC, you can have a complex topology deployed very quickly. Lets take a look at an example.
+Normally this would take a massive amount of effort. It can require a considerable amount of hours to generate the necessary config and perform the validation. Using AFC, you can have a complex topology deployed very quickly. Let's look at an example.
 
 ## Underlay Configuration
 
-The first step is to implement the underlay configuration. To begin, select the Spine Leaf option from the wizard. From there, we can choose to automatically detect the devices or you can manually specify them. I will select automatic detection and proceed.
+The first step is to implement the underlay configuration. To begin, select the Spine Leaf option from the wizard. From there, you can choose to automatically detect the devices or you can manually specify them. I will select automatic detection and proceed.
 
 ![](screenshot-at-jul-12-22-17-43.png "Creating Leaf-Spine Pairs")
 
@@ -56,11 +56,11 @@ I will keep the default OSPF timers but I will enable BFD to help detect a failu
 
 ![](screenshot-at-jul-18-16-16-44.png "OSPF Options Continued")
 
-I will allow the advertisement of router LSA's.
+I will allow the advertisement of router LSAs.
 
 ![](screenshot-at-jul-18-16-17-09.png "LSA Options")
 
-Review the configuration one last time to ensure everything is all good and hit apply to deploy the config.<!--EndFragment.
+Review the configuration one last time to ensure everything is correct and hit apply to deploy the config.<!--EndFragment.
 
 ![](screenshot-at-jul-18-16-17-44.png "OSPF Summary")
 
@@ -108,7 +108,7 @@ Moving back over to the CLI, the BGP config has been deployed to each device.
 
 ![](screenshot-at-jul-18-16-27-07.png "BGP Configuration")
 
-BGP Adjacencies have been established.
+BGP adjacencies have been established.
 
 ![](screenshot-at-jul-18-16-27-32.png "BGP Adjacencies")
 
@@ -150,6 +150,6 @@ The EVPN configuration is also available using the CLI.
 
 During this post, I have covered the following;
 
-* Deployed the underlay using OSPF.
-* Deployed the overlay using iBGP.
-* Configured EVPN and VNI mapping information.
+* Deploying the underlay using OSPF.
+* Deploying the overlay using iBGP.
+* Configuring EVPN and VNI mapping information.
