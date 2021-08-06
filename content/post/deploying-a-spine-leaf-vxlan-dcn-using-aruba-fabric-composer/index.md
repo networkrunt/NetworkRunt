@@ -117,3 +117,39 @@ BGP Adjacencies have been established.
 I will deploy a single VLAN using EVPN. Choose the EVPN option from the wizard.
 
 ![](screenshot-at-jul-18-16-28-09.png "EVPN Wizard")
+
+I will now deploy the EVPN configuration to all of the switches in the fabric.
+
+![](screenshot-at-jul-18-16-28-30.png "Deployment Options")
+
+Provide a name and description for the task.
+
+![](screenshot-at-jul-18-16-29-08.png)
+
+At this point, you can deploy a range of VLANs using EVPN. As mentioned, I will be deploying a single VLAN. I will use VLAN 20 with a base L2VNI of 10000. 
+
+![](screenshot-at-jul-18-16-29-44.png "VNI Mapping")
+
+Specify the route target and system MAC address.
+
+![](screenshot-at-jul-18-16-30-21.png "RT and System Mac Options")
+
+Finally, verify your EVPN configuration before deploying the config.
+
+![](screenshot-at-jul-18-16-30-41.png "EVPN Summary")
+
+To verify the EVPN config, go to Configuration > Routing > EVPN as below.
+
+![](screenshot-at-jul-18-16-32-02.png)
+
+The EVPN configuration is also available using the CLI.
+
+![](screenshot-at-jul-18-16-36-08.png "CLI Verification")
+
+## Summary
+
+During this post, I have covered the following;
+
+* Deployed the underlay using OSPF.
+* Deployed the overlay using iBGP.
+* Configured EVPN and VNI mapping information.
