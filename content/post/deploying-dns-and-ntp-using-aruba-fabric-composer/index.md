@@ -102,4 +102,4 @@ During this post, I have covered the following;
 
 In the next article, I will review the steps to deploy VSX.
 
-[Next Article: AFC GUI Overview](/post/afc-vsx-deployment/)
+[Next Article: AFC VSX Deployment](/post/afc-vsx-deployment/)
