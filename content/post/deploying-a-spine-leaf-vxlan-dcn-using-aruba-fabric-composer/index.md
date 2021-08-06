@@ -10,7 +10,7 @@ image:
   focal_point: Smart
   preview_only: false
 ---
-In this article I will use AFC to deploy a small spine leaf topology using VXLAN. For reference, I will be using the following topology.
+In this article, I will use AFC to deploy a spine leaf topology using VXLAN. For reference, I will be using the following topology.
 
 ![](spine-leaf-base-diagram.jpg)
 
