@@ -2,7 +2,7 @@
 title: AFC Fabric Initialisation
 date: 2021-08-01T12:53:47.482Z
 summary: In this blog post, I will review the steps required to onboard devices
-  into the AFC inventory and the managed network fabric.
+  into the Aruba Fabric Composer inventory.
 draft: false
 featured: false
 authors:
