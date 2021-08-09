@@ -73,3 +73,5 @@ During this post, I have covered the following;
 * Deploying the SVI to the devices.
 * Configuring the VSX parameters.
 * Verification examples.
+
+[Next Article: AFC Configuring a VSX LAG](/post/afc-configuring-a-vsx-lag/)
