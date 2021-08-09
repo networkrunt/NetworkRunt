@@ -81,3 +81,5 @@ During this post, I have covered the following;
 * Using a dedicated P2P link for VSX.
 * Configuring VSX parameters.
 * Verifying VSX operations.
+
+[Next Article: Deploying a spine-leaf VXLAN DCN using AFC](/post/deploying-a-spine-leaf-vxlan-dcn-using-aruba-fabric-composer/)
