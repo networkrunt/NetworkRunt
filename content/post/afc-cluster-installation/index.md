@@ -2,7 +2,7 @@
 title: AFC Cluster Installation
 date: 2021-07-29T12:46:45.794Z
 summary: In this blog post, I will review the installation steps required to
-  install a three-node cluster using AFC 6.1.
+  install a three-node cluster using Aruba Fabric Composer 6.1.
 draft: false
 featured: false
 authors:
