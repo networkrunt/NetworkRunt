@@ -10,7 +10,7 @@ image:
   focal_point: Smart
   preview_only: false
 ---
-In this article, I will use AFC to deploy a spine leaf topology using VXLAN. For reference, I will be using the following topology.
+In this article, I will use AFC to deploy a spine leaf topology using VXLAN. For reference, the following topology will be used throughout this example.
 
 ![](spine-leaf-base-diagram.jpg)
 
@@ -36,8 +36,6 @@ Review the summary and hit apply to configure the uplink interfaces.
 
 ![](screenshot-at-jul-18-16-13-04.png "Underlay IP Address Summary")
 
-
-
 Now go back to the wizard and select the underlays option.
 
 ![](screenshot-at-jul-12-22-33-54.png "Configure Underlay Using the Wizard")
@@ -50,17 +48,17 @@ I will choose which routing protocol I wish to use for the underlay. eBGP is oft
 
 ![](screenshot-at-jul-18-16-14-42.png "Underlay Routing Options")
 
-I will keep the default OSPF timers but I will enable BFD to help detect a failure. An authentication key will be used for authentication and I have used VLAN 10 for the transit VLAN.
+I will keep the default OSPF timers but I will enable BFD to help detect a failure. An authentication key will be used and I have assigned VLAN 10 for the transit VLAN.
 
 ![](screenshot-at-jul-18-16-16-17.png "OSPF Options")
 
 ![](screenshot-at-jul-18-16-16-44.png "OSPF Options Continued")
 
-I will allow the advertisement of router LSAs.
+Next, I will use the default advertisement options.
 
 ![](screenshot-at-jul-18-16-17-09.png "LSA Options")
 
-Review the configuration one last time to ensure everything is correct and hit apply to deploy the config.<!--EndFragment.
+Review the configuration one last time to ensure everything is correct and hit apply to deploy the config.
 
 ![](screenshot-at-jul-18-16-17-44.png "OSPF Summary")
 
@@ -68,9 +66,11 @@ If we take a look at some of the devices, I can see the OSPF config has been app
 
 ![](screenshot-at-jul-18-16-20-37.png "OSPF Configuration")
 
-OSPF adjacencies are formed between the switches.
+OSPF adjacencies have been formed between the switches. Everything is looking good so far. 
 
 ![](screenshot-at-jul-18-16-21-06.png "OSPF Adjacencies")
+
+Now lets move into the overlay configuration section.
 
 ## Overlay Configuration
 
@@ -82,9 +82,7 @@ I now have the option to choose iBGP or eBGP for the overlay. In this example I 
 
 ![](screenshot-at-jul-18-16-22-32.png "BGP Options")
 
-
-
-To support the iBGP deployment, I specify the ASN and configure both spine switches as route reflectors. I then create BGP groups for the leaf and spines and an authentication password.
+To support the iBGP deployment, I specify the ASN and configure both spine switches as route reflectors. I then create BGP groups for the leaf and spines. An authentication password is applied.
 
 ![](screenshot-at-jul-18-16-23-16.png "BGP Parameters")
 
@@ -112,13 +110,15 @@ BGP adjacencies have been established.
 
 ![](screenshot-at-jul-18-16-27-32.png "BGP Adjacencies")
 
+Lets proceed with the EVPN config.
+
 ## EVPN Configuration
 
 I will deploy a single VLAN using EVPN. Choose the EVPN option from the wizard.
 
 ![](screenshot-at-jul-18-16-28-09.png "EVPN Wizard")
 
-I will now deploy the EVPN configuration to all of the switches in the fabric.
+I will now deploy the EVPN configuration to all switches in the fabric.
 
 ![](screenshot-at-jul-18-16-28-30.png "Deployment Options")
 
@@ -126,7 +126,7 @@ Provide a name and description for the task.
 
 ![](screenshot-at-jul-18-16-29-08.png)
 
-At this point, you can deploy a range of VLANs using EVPN. As mentioned, I will be deploying a single VLAN. I will use VLAN 20 with a base L2VNI of 10000. 
+At this point, you can deploy a range of VLANs using EVPN. As mentioned, I will be deploying a single VLAN for this scenario. I will use VLAN 20 with a base L2VNI of 10000. 
 
 ![](screenshot-at-jul-18-16-29-44.png "VNI Mapping")
 
@@ -146,6 +146,8 @@ The EVPN configuration is also available using the CLI.
 
 ![](screenshot-at-jul-18-16-36-08.png "CLI Verification")
 
+That's it for now! You can use this as a base and then start building out additional configurations for your environment.
+
 ## Summary
 
 During this post, I have covered the following;
@@ -153,3 +155,4 @@ During this post, I have covered the following;
 * Deploying the underlay using OSPF.
 * Deploying the overlay using iBGP.
 * Configuring EVPN and VNI mapping information.
+* Verifying each stage of the deployment.
