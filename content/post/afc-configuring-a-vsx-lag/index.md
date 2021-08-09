@@ -74,3 +74,5 @@ During this post, I have covered the following;
 * Configuring a VSX LAG.
 * Assigning the VLAN and LACP parameters.
 * Verifying the configuration.
+
+[Next Article: AFC Intergration with VMware vSphere](/post/afc-intergration-with-vmware-vsphere/)
