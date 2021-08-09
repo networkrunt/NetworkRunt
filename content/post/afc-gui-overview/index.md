@@ -1,8 +1,9 @@
 ---
 title: AFC GUI Overview
 date: 2021-08-01T12:28:46.926Z
-summary: In this blog post, I will review the layout of the GUI. The aim is to
-  allow new users to become familiar with the interface structure.
+summary: In this blog post, I will review the layout of the Aruba Fabric
+  Composer GUI. The aim is to allow new users to become familiar with the
+  interface structure.
 draft: false
 featured: false
 authors:
