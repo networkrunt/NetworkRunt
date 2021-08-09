@@ -1,5 +1,5 @@
 ---
-title: AFC SVI Configuration
+title: AFC Distributed Gateway SVI Configuration
 date: 2021-08-09T11:05:05.017Z
 summary: In this blog post, I will take a look at deploying a distributed
   gateway SVI in a VXLAN network using Aruba Fabric Composer.
@@ -19,7 +19,7 @@ image:
   focal_point: Smart
   preview_only: false
 ---
-In this post, I will create a VXLAN Distributed Gateway SVI using VLAN 20 from the previous article.
+In this post, I will create a VXLAN distributed gateway SVI using VLAN 20 from the previous article.
 
 To create the SVI, I will move across to the configuration menu. IP configuration is performed in the relevant VRF. To add an SVI go into Configurations > Routing > VRF.
 
