@@ -5,6 +5,15 @@ summary: In this blog post, I will show you how to deploy a VXLAN network using
   AFC's integrated workflows.
 draft: false
 featured: false
+authors:
+  - admin
+tags:
+  - afc
+  - aruba_fabric_composer
+  - data_centre
+  - aruba_networks
+categories:
+  - data_centre
 image:
   filename: featured
   focal_point: Smart
