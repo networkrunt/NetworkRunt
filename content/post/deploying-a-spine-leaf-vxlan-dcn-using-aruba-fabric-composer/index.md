@@ -3,7 +3,7 @@ title: Deploying a Spine Leaf VXLAN DCN using AFC
 date: 2021-08-05T13:15:47.432Z
 summary: In this blog post, I will show you how to deploy a VXLAN network using
   AFC's integrated workflows.
-draft: true
+draft: false
 featured: false
 image:
   filename: featured
