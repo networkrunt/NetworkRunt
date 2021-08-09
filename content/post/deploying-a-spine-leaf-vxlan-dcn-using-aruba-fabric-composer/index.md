@@ -165,3 +165,5 @@ During this post, I have covered the following;
 * Deploying the overlay using iBGP.
 * Configuring EVPN and VNI mapping information.
 * Verifying each stage of the deployment.
+
+[Next Article: AFC Distributed Gateway SVI Configuration](/post/afc-svi-configuration/)
