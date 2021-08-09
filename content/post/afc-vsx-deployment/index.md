@@ -2,7 +2,7 @@
 title: AFC VSX Deployment
 date: 2021-08-05T08:09:44.910Z
 summary: In this blog post, I will demonstrate how to deploy VSX pairs using the
-  automated workflows in AFC.
+  automated workflows in Aruba Fabric Composer.
 draft: false
 featured: false
 authors:
