@@ -118,3 +118,5 @@ During this post, I have covered the following;
 * Configuring integration between AFC and vSphere.
 * Installing the AFC plugin in the vSphere console.
 * Verifying the configuration.
+
+[Next Article: AFC Integration with Aruba NetEdit](/post/afc-integration-with-aruba-netedit/)
