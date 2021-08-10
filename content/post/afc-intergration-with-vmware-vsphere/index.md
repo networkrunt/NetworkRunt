@@ -1,6 +1,8 @@
 ---
 title: AFC Intergration with VMware vSphere
 date: 2021-08-09T12:38:12.373Z
+summary: In this blog post, I will review the integration configuration between
+  AFC and vSphere.
 draft: false
 featured: false
 authors:
