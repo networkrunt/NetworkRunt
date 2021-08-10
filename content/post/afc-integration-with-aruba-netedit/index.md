@@ -19,7 +19,11 @@ image:
   focal_point: Smart
   preview_only: false
 ---
-Aruba NetEdit provides automation and workflows using a traditional CLI-like environment. For those users who wish to continue to use NetEdit alongside AFC, then you will be glad to know you can easily integrate the two tools. The AFC and Netedit integration allow you to open Netedit directly from AFC. This gives you seamless functionality of both tools in your environment.
+Aruba NetEdit provides automation and workflows using a traditional CLI-like environment. 
+
+For those users who wish to continue to use NetEdit alongside AFC, then you will be glad to know you can easily integrate the two tools. 
+
+The AFC and Netedit integration allow you to open Netedit directly from AFC. This gives you seamless functionality of both tools in your environment.
 
 In this post, I will quickly run through how to set up the integration between the two.
 
