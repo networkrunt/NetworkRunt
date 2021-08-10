@@ -2,7 +2,7 @@
 title: AFC Integration with Aruba NetEdit
 date: 2021-08-10T10:57:39.354Z
 summary: In this blog post, I will show you how to configure integration between
-  Aruba Fabric Composer and Aruba Netedit.
+  Aruba Fabric Composer and Aruba NetEdit.
 draft: false
 featured: false
 authors:
@@ -47,9 +47,13 @@ The NetEdit integration has successfully connected as seen on the integration pa
 
 At this point, the integration has been successfully completed. Now, I can go into the Visualizations menu to view the network topology. From there, I can right-click on any network device and choose the "Launch Netedit..." options to load Netedit for use. 
 
-![](screenshot-at-jul-19-22-35-43.png "Aruba NetEdit")
+![](screenshot-at-jul-19-22-35-17.png "Launch NetEdit")
 
 This will then allow you access to your NetEdit environment to perform tasks.
+
+![](screenshot-at-jul-19-22-35-43.png "Aruba NetEdit")
+
+
 
 ## Summary
 
